@@ -1,0 +1,211 @@
+2020-04-29T19:35:04.718+0800 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-04-29T19:35:04.739+0800 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2020-04-29T19:35:04.742+0800 I  CONTROL  [initandlisten] MongoDB starting : pid=13677 port=27017 dbpath=/Users/wangwenjie/Desktop/wwj/back/data 64-bit host=wangwenjiedeMacBook-Pro.local
+2020-04-29T19:35:04.743+0800 I  CONTROL  [initandlisten] db version v4.2.6
+2020-04-29T19:35:04.744+0800 I  CONTROL  [initandlisten] git version: 20364840b8f1af16917e4c23c1b5f5efd8b352f8
+2020-04-29T19:35:04.744+0800 I  CONTROL  [initandlisten] allocator: system
+2020-04-29T19:35:04.745+0800 I  CONTROL  [initandlisten] modules: none
+2020-04-29T19:35:04.745+0800 I  CONTROL  [initandlisten] build environment:
+2020-04-29T19:35:04.746+0800 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-04-29T19:35:04.746+0800 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-04-29T19:35:04.747+0800 I  CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "data" }, systemLog: { destination: "file", logAppend: true, path: "log/mongod.log" } }
+2020-04-29T19:35:04.749+0800 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2020-04-29T19:35:05.290+0800 I  STORAGE  [initandlisten] WiredTiger message [1588160105:290221][13677:0x10b7eadc0], txn-recover: Set global recovery timestamp: (0, 0)
+2020-04-29T19:35:05.347+0800 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-04-29T19:35:05.391+0800 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-04-29T19:35:05.393+0800 I  CONTROL  [initandlisten] 
+2020-04-29T19:35:05.394+0800 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-04-29T19:35:05.395+0800 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-04-29T19:35:05.396+0800 I  CONTROL  [initandlisten] 
+2020-04-29T19:35:05.397+0800 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-04-29T19:35:05.397+0800 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2020-04-29T19:35:05.398+0800 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2020-04-29T19:35:05.399+0800 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-04-29T19:35:05.400+0800 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-04-29T19:35:05.401+0800 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-04-29T19:35:05.402+0800 I  CONTROL  [initandlisten] 
+2020-04-29T19:35:05.415+0800 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 118796af-25dc-4aa4-a8f1-b1e9b99cc373 and options: { uuid: UUID("118796af-25dc-4aa4-a8f1-b1e9b99cc373") }
+2020-04-29T19:35:05.475+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2020-04-29T19:35:05.477+0800 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-04-29T19:35:05.478+0800 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2020-04-29T19:35:05.480+0800 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-04-29T19:35:05.482+0800 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-04-29T19:35:05.483+0800 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-04-29T19:35:05.484+0800 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: d684bf46-4c08-4abf-bb28-9d85b9b8dd15 and options: { capped: true, size: 10485760 }
+2020-04-29T19:35:05.531+0800 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2020-04-29T19:35:05.533+0800 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-04-29T19:35:05.534+0800 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/wangwenjie/Desktop/wwj/back/data/diagnostic.data'
+2020-04-29T19:35:05.537+0800 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+2020-04-29T19:35:05.537+0800 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2020-04-29T19:35:05.539+0800 I  NETWORK  [listener] Listening on 127.0.0.1
+2020-04-29T19:35:05.539+0800 I  NETWORK  [listener] waiting for connections on port 27017
+2020-04-29T19:35:05.541+0800 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2020-04-29T19:35:05.542+0800 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 67cdf4f1-e53b-401d-bec3-c996a75aac0a and options: { uuid: UUID("67cdf4f1-e53b-401d-bec3-c996a75aac0a") }
+2020-04-29T19:35:05.583+0800 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2020-04-29T19:35:05.615+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:63976 #1 (1 connection now open)
+2020-04-29T19:35:05.617+0800 I  NETWORK  [conn1] received client metadata from 127.0.0.1:63976 conn1: { driver: { name: "mongo-java-driver|legacy", version: "019.3.0-FINAL-134-g920118f1b2-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.4" }, platform: "Java/Oracle Corporation/1.8.0_202-b08" }
+2020-04-29T19:35:05.623+0800 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2020-04-29T19:35:05.625+0800 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 200 megabytes of RAM
+2020-04-29T19:35:05.625+0800 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2020-04-29T19:35:05.628+0800 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2020-04-29T19:35:05.639+0800 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2020-04-29T19:35:05.650+0800 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 4, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 1 } storage:{} protocol:op_msg 107ms
+2020-04-29T19:35:06.006+0800 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-04-29T19:35:08.013+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:63994 #2 (2 connections now open)
+2020-04-29T19:35:08.014+0800 I  NETWORK  [conn2] received client metadata from 127.0.0.1:63994 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "19.4.0" } }
+2020-04-29T19:35:19.322+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64062 #3 (3 connections now open)
+2020-04-29T19:35:19.340+0800 I  NETWORK  [conn3] received client metadata from 127.0.0.1:64062 conn3: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:35:30.445+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64130 #4 (4 connections now open)
+2020-04-29T19:35:30.446+0800 I  NETWORK  [conn4] received client metadata from 127.0.0.1:64130 conn4: { driver: { name: "mongo-java-driver|legacy", version: "019.3.0-FINAL-134-g920118f1b2-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.4" }, platform: "Java/Oracle Corporation/1.8.0_202-b08" }
+2020-04-29T19:35:32.440+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64143 #5 (5 connections now open)
+2020-04-29T19:35:32.441+0800 I  NETWORK  [conn5] received client metadata from 127.0.0.1:64143 conn5: { driver: { name: "mongo-java-driver|legacy", version: "019.3.0-FINAL-134-g920118f1b2-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.4" }, platform: "Java/Oracle Corporation/1.8.0_202-b08" }
+2020-04-29T19:36:41.907+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64529 #6 (6 connections now open)
+2020-04-29T19:36:41.926+0800 I  NETWORK  [conn6] received client metadata from 127.0.0.1:64529 conn6: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:36:41.955+0800 I  NETWORK  [conn3] end connection 127.0.0.1:64062 (5 connections now open)
+2020-04-29T19:37:29.227+0800 I  SHARDING [conn6] Marking collection kkbjs12.users as collection version: <unsharded>
+2020-04-29T19:37:29.245+0800 I  STORAGE  [conn6] createCollection: kkbjs12.users with generated UUID: 6acf7b97-913a-462d-995d-e64dcb811832 and options: {}
+2020-04-29T19:37:29.284+0800 I  INDEX    [conn6] index build: done building index _id_ on ns kkbjs12.users
+2020-04-29T19:38:16.556+0800 I  SHARDING [conn6] Marking collection kkbjs12.articles as collection version: <unsharded>
+2020-04-29T19:40:05.554+0800 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2020-04-29T19:45:01.864+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:50774 #7 (6 connections now open)
+2020-04-29T19:45:01.881+0800 I  NETWORK  [conn7] received client metadata from 127.0.0.1:50774 conn7: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:45:01.912+0800 I  NETWORK  [conn6] end connection 127.0.0.1:64529 (5 connections now open)
+2020-04-29T19:45:03.078+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:50782 #8 (6 connections now open)
+2020-04-29T19:45:03.095+0800 I  NETWORK  [conn8] received client metadata from 127.0.0.1:50782 conn8: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:45:03.118+0800 I  NETWORK  [conn7] end connection 127.0.0.1:50774 (5 connections now open)
+2020-04-29T19:45:04.229+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:50790 #9 (6 connections now open)
+2020-04-29T19:45:04.247+0800 I  NETWORK  [conn9] received client metadata from 127.0.0.1:50790 conn9: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:45:04.271+0800 I  NETWORK  [conn8] end connection 127.0.0.1:50782 (5 connections now open)
+2020-04-29T19:45:07.679+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:50812 #10 (6 connections now open)
+2020-04-29T19:45:07.695+0800 I  NETWORK  [conn10] received client metadata from 127.0.0.1:50812 conn10: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:45:07.719+0800 I  NETWORK  [conn9] end connection 127.0.0.1:50790 (5 connections now open)
+2020-04-29T19:55:12.412+0800 I  STORAGE  [conn10] createCollection: kkbjs12.articles with generated UUID: bc72b4f6-5269-4c44-aa5a-8da36ece0dbe and options: {}
+2020-04-29T19:55:12.456+0800 I  INDEX    [conn10] index build: done building index _id_ on ns kkbjs12.articles
+2020-04-29T19:55:13.602+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53993 #11 (6 connections now open)
+2020-04-29T19:55:13.615+0800 I  NETWORK  [conn11] received client metadata from 127.0.0.1:53993 conn11: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:55:31.024+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54090 #12 (7 connections now open)
+2020-04-29T19:55:31.027+0800 I  NETWORK  [conn12] received client metadata from 127.0.0.1:54090 conn12: { driver: { name: "mongo-java-driver|legacy", version: "019.3.0-FINAL-134-g920118f1b2-dirty" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "10.15.4" }, platform: "Java/Oracle Corporation/1.8.0_202-b08" }
+2020-04-29T19:56:16.255+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54326 #13 (8 connections now open)
+2020-04-29T19:56:16.276+0800 I  NETWORK  [conn13] received client metadata from 127.0.0.1:54326 conn13: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:56:16.304+0800 I  NETWORK  [conn11] end connection 127.0.0.1:53993 (7 connections now open)
+2020-04-29T19:56:16.304+0800 I  NETWORK  [conn10] end connection 127.0.0.1:50812 (6 connections now open)
+2020-04-29T19:56:23.568+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54365 #14 (7 connections now open)
+2020-04-29T19:56:23.585+0800 I  NETWORK  [conn14] received client metadata from 127.0.0.1:54365 conn14: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:56:23.614+0800 I  NETWORK  [conn13] end connection 127.0.0.1:54326 (6 connections now open)
+2020-04-29T19:56:31.524+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54410 #15 (7 connections now open)
+2020-04-29T19:56:31.546+0800 I  NETWORK  [conn15] received client metadata from 127.0.0.1:54410 conn15: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:56:31.571+0800 I  NETWORK  [conn14] end connection 127.0.0.1:54365 (6 connections now open)
+2020-04-29T19:56:36.243+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54438 #16 (7 connections now open)
+2020-04-29T19:56:36.261+0800 I  NETWORK  [conn16] received client metadata from 127.0.0.1:54438 conn16: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:56:36.301+0800 I  NETWORK  [conn15] end connection 127.0.0.1:54410 (6 connections now open)
+2020-04-29T19:56:37.625+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54447 #17 (7 connections now open)
+2020-04-29T19:56:37.657+0800 I  NETWORK  [conn17] received client metadata from 127.0.0.1:54447 conn17: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:56:37.685+0800 I  NETWORK  [conn16] end connection 127.0.0.1:54438 (6 connections now open)
+2020-04-29T19:56:39.511+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54459 #18 (7 connections now open)
+2020-04-29T19:56:39.529+0800 I  NETWORK  [conn18] received client metadata from 127.0.0.1:54459 conn18: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T19:56:39.556+0800 I  NETWORK  [conn17] end connection 127.0.0.1:54447 (6 connections now open)
+2020-04-29T22:14:08.937+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64711 #19 (7 connections now open)
+2020-04-29T22:14:08.953+0800 I  NETWORK  [conn19] received client metadata from 127.0.0.1:64711 conn19: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:08.981+0800 I  NETWORK  [conn18] end connection 127.0.0.1:54459 (6 connections now open)
+2020-04-29T22:14:20.226+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64773 #20 (7 connections now open)
+2020-04-29T22:14:20.251+0800 I  NETWORK  [conn20] received client metadata from 127.0.0.1:64773 conn20: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:20.285+0800 I  NETWORK  [conn19] end connection 127.0.0.1:64711 (6 connections now open)
+2020-04-29T22:14:21.390+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64781 #21 (7 connections now open)
+2020-04-29T22:14:21.515+0800 I  NETWORK  [conn21] received client metadata from 127.0.0.1:64781 conn21: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:21.571+0800 I  NETWORK  [conn20] end connection 127.0.0.1:64773 (6 connections now open)
+2020-04-29T22:14:42.209+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64887 #22 (7 connections now open)
+2020-04-29T22:14:42.229+0800 I  NETWORK  [conn22] received client metadata from 127.0.0.1:64887 conn22: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:42.258+0800 I  NETWORK  [conn21] end connection 127.0.0.1:64781 (6 connections now open)
+2020-04-29T22:14:44.831+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64907 #23 (7 connections now open)
+2020-04-29T22:14:44.847+0800 I  NETWORK  [conn23] received client metadata from 127.0.0.1:64907 conn23: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:44.871+0800 I  NETWORK  [conn22] end connection 127.0.0.1:64887 (6 connections now open)
+2020-04-29T22:14:51.311+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64940 #24 (7 connections now open)
+2020-04-29T22:14:51.328+0800 I  NETWORK  [conn24] received client metadata from 127.0.0.1:64940 conn24: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:51.353+0800 I  NETWORK  [conn23] end connection 127.0.0.1:64907 (6 connections now open)
+2020-04-29T22:14:54.433+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64963 #25 (7 connections now open)
+2020-04-29T22:14:54.448+0800 I  NETWORK  [conn25] received client metadata from 127.0.0.1:64963 conn25: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:14:54.482+0800 I  NETWORK  [conn24] end connection 127.0.0.1:64940 (6 connections now open)
+2020-04-29T22:14:58.117+0800 I  NETWORK  [conn25] end connection 127.0.0.1:64963 (5 connections now open)
+2020-04-29T22:15:01.260+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:64997 #26 (6 connections now open)
+2020-04-29T22:15:01.279+0800 I  NETWORK  [conn26] received client metadata from 127.0.0.1:64997 conn26: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:03.987+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65016 #27 (7 connections now open)
+2020-04-29T22:15:04.009+0800 I  NETWORK  [conn27] received client metadata from 127.0.0.1:65016 conn27: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:04.035+0800 I  NETWORK  [conn26] end connection 127.0.0.1:64997 (6 connections now open)
+2020-04-29T22:15:18.073+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65091 #28 (7 connections now open)
+2020-04-29T22:15:18.093+0800 I  NETWORK  [conn28] received client metadata from 127.0.0.1:65091 conn28: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:18.118+0800 I  NETWORK  [conn27] end connection 127.0.0.1:65016 (6 connections now open)
+2020-04-29T22:15:21.775+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65114 #29 (7 connections now open)
+2020-04-29T22:15:21.792+0800 I  NETWORK  [conn29] received client metadata from 127.0.0.1:65114 conn29: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:21.814+0800 I  NETWORK  [conn28] end connection 127.0.0.1:65091 (6 connections now open)
+2020-04-29T22:15:24.786+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65132 #30 (7 connections now open)
+2020-04-29T22:15:24.809+0800 I  NETWORK  [conn30] received client metadata from 127.0.0.1:65132 conn30: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:24.833+0800 I  NETWORK  [conn29] end connection 127.0.0.1:65114 (6 connections now open)
+2020-04-29T22:15:28.991+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65157 #31 (7 connections now open)
+2020-04-29T22:15:29.013+0800 I  NETWORK  [conn31] received client metadata from 127.0.0.1:65157 conn31: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:29.038+0800 I  NETWORK  [conn30] end connection 127.0.0.1:65132 (6 connections now open)
+2020-04-29T22:15:47.427+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65254 #32 (7 connections now open)
+2020-04-29T22:15:47.446+0800 I  NETWORK  [conn32] received client metadata from 127.0.0.1:65254 conn32: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:47.479+0800 I  NETWORK  [conn31] end connection 127.0.0.1:65157 (6 connections now open)
+2020-04-29T22:15:48.377+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65263 #33 (7 connections now open)
+2020-04-29T22:15:48.397+0800 I  NETWORK  [conn33] received client metadata from 127.0.0.1:65263 conn33: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:15:48.424+0800 I  NETWORK  [conn32] end connection 127.0.0.1:65254 (6 connections now open)
+2020-04-29T22:16:33.137+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65498 #34 (7 connections now open)
+2020-04-29T22:16:33.153+0800 I  NETWORK  [conn34] received client metadata from 127.0.0.1:65498 conn34: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:16:33.180+0800 I  NETWORK  [conn33] end connection 127.0.0.1:65263 (6 connections now open)
+2020-04-29T22:16:33.977+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65505 #35 (7 connections now open)
+2020-04-29T22:16:33.995+0800 I  NETWORK  [conn35] received client metadata from 127.0.0.1:65505 conn35: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:16:34.020+0800 I  NETWORK  [conn34] end connection 127.0.0.1:65498 (6 connections now open)
+2020-04-29T22:16:36.896+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:65524 #36 (7 connections now open)
+2020-04-29T22:16:36.913+0800 I  NETWORK  [conn36] received client metadata from 127.0.0.1:65524 conn36: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:16:36.941+0800 I  NETWORK  [conn35] end connection 127.0.0.1:65505 (6 connections now open)
+2020-04-29T22:16:45.407+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:49185 #37 (7 connections now open)
+2020-04-29T22:16:45.426+0800 I  NETWORK  [conn37] received client metadata from 127.0.0.1:49185 conn37: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:16:45.456+0800 I  NETWORK  [conn36] end connection 127.0.0.1:65524 (6 connections now open)
+2020-04-29T22:18:39.111+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:49765 #38 (7 connections now open)
+2020-04-29T22:18:39.133+0800 I  NETWORK  [conn38] received client metadata from 127.0.0.1:49765 conn38: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:18:39.162+0800 I  NETWORK  [conn37] end connection 127.0.0.1:49185 (6 connections now open)
+2020-04-29T22:18:40.130+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:49773 #39 (7 connections now open)
+2020-04-29T22:18:40.149+0800 I  NETWORK  [conn39] received client metadata from 127.0.0.1:49773 conn39: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:18:40.175+0800 I  NETWORK  [conn38] end connection 127.0.0.1:49765 (6 connections now open)
+2020-04-29T22:18:43.076+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:49791 #40 (7 connections now open)
+2020-04-29T22:18:43.092+0800 I  NETWORK  [conn40] received client metadata from 127.0.0.1:49791 conn40: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:18:43.115+0800 I  NETWORK  [conn39] end connection 127.0.0.1:49773 (6 connections now open)
+2020-04-29T22:19:22.332+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:49993 #41 (7 connections now open)
+2020-04-29T22:19:22.348+0800 I  NETWORK  [conn41] received client metadata from 127.0.0.1:49993 conn41: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:19:22.370+0800 I  NETWORK  [conn40] end connection 127.0.0.1:49791 (6 connections now open)
+2020-04-29T22:29:35.153+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53121 #42 (7 connections now open)
+2020-04-29T22:29:35.170+0800 I  NETWORK  [conn42] received client metadata from 127.0.0.1:53121 conn42: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:29:35.192+0800 I  NETWORK  [conn41] end connection 127.0.0.1:49993 (6 connections now open)
+2020-04-29T22:30:26.604+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53385 #43 (7 connections now open)
+2020-04-29T22:30:26.623+0800 I  NETWORK  [conn43] received client metadata from 127.0.0.1:53385 conn43: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:30:26.651+0800 I  NETWORK  [conn42] end connection 127.0.0.1:53121 (6 connections now open)
+2020-04-29T22:30:28.064+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53394 #44 (7 connections now open)
+2020-04-29T22:30:28.080+0800 I  NETWORK  [conn44] received client metadata from 127.0.0.1:53394 conn44: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:30:28.101+0800 I  NETWORK  [conn43] end connection 127.0.0.1:53385 (6 connections now open)
+2020-04-29T22:30:31.450+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53416 #45 (7 connections now open)
+2020-04-29T22:30:31.466+0800 I  NETWORK  [conn45] received client metadata from 127.0.0.1:53416 conn45: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:30:31.489+0800 I  NETWORK  [conn44] end connection 127.0.0.1:53394 (6 connections now open)
+2020-04-29T22:31:26.358+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53696 #46 (7 connections now open)
+2020-04-29T22:31:26.374+0800 I  NETWORK  [conn46] received client metadata from 127.0.0.1:53696 conn46: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:31:26.396+0800 I  NETWORK  [conn45] end connection 127.0.0.1:53416 (6 connections now open)
+2020-04-29T22:32:07.499+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53907 #47 (7 connections now open)
+2020-04-29T22:32:07.519+0800 I  NETWORK  [conn47] received client metadata from 127.0.0.1:53907 conn47: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:32:07.548+0800 I  NETWORK  [conn46] end connection 127.0.0.1:53696 (6 connections now open)
+2020-04-29T22:32:12.299+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53934 #48 (7 connections now open)
+2020-04-29T22:32:12.314+0800 I  NETWORK  [conn48] received client metadata from 127.0.0.1:53934 conn48: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:32:12.343+0800 I  NETWORK  [conn47] end connection 127.0.0.1:53907 (6 connections now open)
+2020-04-29T22:32:13.742+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53947 #49 (7 connections now open)
+2020-04-29T22:32:13.771+0800 I  NETWORK  [conn49] received client metadata from 127.0.0.1:53947 conn49: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:32:13.801+0800 I  NETWORK  [conn48] end connection 127.0.0.1:53934 (6 connections now open)
+2020-04-29T22:32:16.301+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:53961 #50 (7 connections now open)
+2020-04-29T22:32:16.321+0800 I  NETWORK  [conn50] received client metadata from 127.0.0.1:53961 conn50: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:32:16.346+0800 I  NETWORK  [conn49] end connection 127.0.0.1:53947 (6 connections now open)
+2020-04-29T22:32:52.866+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54155 #51 (7 connections now open)
+2020-04-29T22:32:52.883+0800 I  NETWORK  [conn51] received client metadata from 127.0.0.1:54155 conn51: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:32:52.909+0800 I  NETWORK  [conn50] end connection 127.0.0.1:53961 (6 connections now open)
+2020-04-29T22:33:23.674+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54311 #52 (7 connections now open)
+2020-04-29T22:33:23.691+0800 I  NETWORK  [conn52] received client metadata from 127.0.0.1:54311 conn52: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:33:23.718+0800 I  NETWORK  [conn51] end connection 127.0.0.1:54155 (6 connections now open)
+2020-04-29T22:33:32.863+0800 I  NETWORK  [listener] connection accepted from 127.0.0.1:54361 #53 (7 connections now open)
+2020-04-29T22:33:32.881+0800 I  NETWORK  [conn53] received client metadata from 127.0.0.1:54361 conn53: { driver: { name: "nodejs", version: "3.5.6" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.4.0" }, platform: "'Node.js v12.12.0, LE (legacy)" }
+2020-04-29T22:33:32.906+0800 I  NETWORK  [conn52] end connection 127.0.0.1:54311 (6 connections now open)
